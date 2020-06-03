@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa...</title>
+    <style>
+        body{background-color: rgb(115, 115, 233);
+        color: white; /*comentario na CSS*/
+        font: normal 20pt Arial;
+        }
+h1{color: yellowgreen;}
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>  <!--isso é um comentario no html-->
+    <p>Já me livrei da maldição</p>
+    <script>
+       var n1 = Number.parseInt(window.prompt('Digite um número: ')); //manipulação de string para number
+       var n2 = Number.parseFloat(window.prompt('Digite outro número: ')); // para colocar numeros com virgula
+       var n3 = Number(window.prompt('Digite mais um número: '));
+       var s = n1 + n2 + n3;
+       window.alert(`A soma entre ${n1}, ${n2} e ${n3} é igual a ${s}`);
+       window.alert('A soma dos valores: ' + s.toString()); //conversao para conversao de number para string ( aqui, isto nao é obrigatório)
+    </script>
+</body>
+</html>
