@@ -1,0 +1,12 @@
+p input {
+color: purple;
+font-style: italic; 
+}
+
+select, button {
+    background-color: rgba(149, 96, 184, 0.568)
+} 
+
+select, p input {
+   width: 100%;
+}
