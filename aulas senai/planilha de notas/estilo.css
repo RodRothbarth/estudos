@@ -1,0 +1,22 @@
+table, #contatos {
+    background-color: seagreen;
+}
+#contatos{
+    display:inline-block;
+    width: 200px;
+    height: 180px;
+}
+#para, #contato, #quemSomos {
+    background-color: white;
+    color: black;
+
+}
+p {
+    text-align: justify;
+    text-indent: 10mm;
+}
+
+#message {
+    height: 50px;
+    }
+

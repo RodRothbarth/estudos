@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME - Colégio</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        body {
+          background-image: url('fundo.jpg');
+        }
+        </style>
+        <script src="notas.js"></script>
+</head>
+<body> 
+      <!--<a href="area do aluno1.html">Turma-301</a></th> <th><a href="area do aluno2.html">Turma-302</a>-->
+    <h1><img src="logo.jpg"></h1>
+    <table border="1">
+        <th><a href="siteEscola.html"><img src="home-icon.png"></a></th> 
+        <th><a href="#quemSomos"><img src="quienes-somos.png"></a></th> 
+        <th><select name="turmas" id="select" onChange="direcionar(this.value)">
+            <option value="Turmas">Turmas</option>
+            <option value="area do aluno1.html">Turma-301</option>
+            <option value="area do aluno2.html">Turma-302</option>
+        </th> 
+             
+        <th><a href="#contato"><img src="contato.png"></a></th>
+    </table>
+        
+    <img src="fachada.jpg">
+    <img src="escola.jpeg">
+    <img src="escola2.jpg">
+    
+    <h2 id="quemSomos">QUEM SOMOS</h2> <img src="docente.jpg">
+    <div id="para">
+    <p>Phasellus posuere urna tortor, ut scelerisque eros hendrerit non. Nam non maximus lorem. Ut pharetra ex nibh, nec interdum lacus facilisis at. Nunc hendrerit, ex et posuere porta, lectus ipsum malesuada mauris, in placerat mi dui vitae velit. Phasellus eget massa turpis. Nunc aliquam pretium leo, vitae condimentum arcu cursus in. Donec feugiat tellus sem, at pharetra ante aliquet sit amet. Integer nec aliquet dui, vitae ultrices nibh. Phasellus odio lectus, porttitor at placerat non, sagittis rhoncus nisi. Sed leo eros, sagittis eu ornare quis, scelerisque vel eros. Nullam nec scelerisque elit, a vulputate justo. In et faucibus sem, vel luctus diam. Vestibulum ornare odio et efficitur mollis. Nunc non tincidunt felis. Integer pretium nisl in urna euismod vestibulum. Phasellus ipsum elit, sodales eget sollicitudin ac, feugiat et erat.</p>
+    <p>Mauris ac mollis leo. Mauris aliquet velit in orci porttitor, sit amet finibus quam feugiat. Nunc sed mauris erat. Maecenas sed varius ante. Mauris nec ipsum massa. Etiam pellentesque, metus eu posuere bibendum, purus sem feugiat velit, sit amet accumsan ex est posuere quam. Mauris ultrices elit ex, ut accumsan metus suscipit eu.</p>   
+    <p>Fusce pharetra sem eget quam egestas, non ultrices neque varius. Vivamus suscipit posuere erat at ultricies. Nam ut dapibus purus, eu rutrum dolor. Donec fringilla vestibulum felis, vitae lobortis lacus cursus vitae. Mauris fermentum urna sapien, at varius tortor egestas ac. Nulla facilisi. Nam et lectus a ex blandit eleifend et vel leo. Fusce a quam eros. Suspendisse lacinia rhoncus aliquet.</p>
+    </div>
+<h2 id="contato">CONTATO</h2>
+<div id="contatos">E-mail: <br><input type="email" id="email"></br>
+    Nome Completo: <br><input type="text" id="name"></br>
+    Mensagem: <br><input type="text" height="100" id="message">
+    <input type="submit">
+</div>
+</body>
+</html>
