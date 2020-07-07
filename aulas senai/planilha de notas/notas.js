@@ -3,36 +3,14 @@ function direcionar(sala){
 }
 
 
-function notas(){eu(); eud()}
-
-    function eu(){
-      const num1 = document.getElementById("nota1")
-      const num2 = document.getElementById("nota2")
-      const resultado = document.getElementById("finalGrade")
+    function notaFinal(i){
+      const num1 = document.getElementsByName("nota1")[i]
+      const num2 = document.getElementsByName("nota2")[i]
+      const resultado = document.getElementsByName("media")[i]
       resultado.value = ((parseFloat(num1.value) + parseFloat(num2.value))/2)
-      if (resultado.value >= 5){
-         document.getElementById("resultado").innerHTML = "Aprovado"
-      } else {document.getElementById("resultado").innerHTML = "Reprovado"}
       
-    }
-
-    function eud(){
-        const num1 = document.getElementById("notad1")
-        const num2 = document.getElementById("notad2")
-        const resultado = document.getElementById("finalGraded")
-        resultado.value = ((parseFloat(num1.value) + parseFloat(num2.value))/2)
-        if (resultado.value >= 5){
-            document.getElementById("resultadod").innerHTML = "Aprovado"
-        } else {document.getElementById("resultadod").innerHTML = "Reprovado"}
-    }
-
-    function eub(){
-        const num1 = document.getElementById("nota1b")
-        const num2 = document.getElementById("notab2b")
-        const resultado = document.getElementById("finalGradeb")
-        resultado.value = ((parseFloat(num1.value) + parseFloat(num2.value))/2)
-        if (resultado.value >= 5){
-            document.getElementById("resultadob").innerHTML = "Aprovado"
-        } else {document.getElementById("resultadob").innerHTML = "Reprovado"}
-    }
-    
+      if (resultado.value >= 5){
+         document.getElementsByName("resultado")[i].innerHTML = "Aprovado"
+      } else {document.getElementsByName("resultado")[i].innerHTML = "Reprovado"}
+      
+    }    

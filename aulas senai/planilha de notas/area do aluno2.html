@@ -14,60 +14,59 @@
 <body>
     <script src="notas.js"></script>
     <img src="logo.jpg">
-    <table border="1"><th>Turma 302</th></table>
+    <table border="1"><th>Turma 302</th><th><a href="siteEscola.html"><img src="home-icon.png"></a></th></table>
     <table id="tabelaNota1"> 
         <tr>
             <th>Cód.</th> <th>Aluno</th> <th>Nota 1</th> <th>Nota 2</th> <th>Média</th> <th>Aprovação</th>
         </tr>
         <tr>
-            <td><strong>2020001</strong></td>
-            <td><strong>Rodrigo Pereira Rothbarth</strong></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1"></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2"></td>
+            <td><strong>2020011</strong></td>
+            <td><strong>Renato Silva</strong></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1" onchange="notaFinal(0)"></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2" onchange="notaFinal(0)"></td>
             <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="finalGrade" name="media" readonly></td>
-            <td><div id="resultado">-- </div></td>
+            <td><div name="resultado">-- </div></td>
         </tr>
         <tr>
-            <td><strong>2020002</strong></td>
-            <td><strong>Daniela Moura dos Santos</strong></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="notad1" name="nota1"></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="notad2" name="nota2"></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="finalGraded" name="media" readonly></td>
-            <td><div id="resultadod">-- </div></td>
+            <td><strong>2020012</strong></td>
+            <td><strong>Douglas Pereira Machado</strong></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1" onchange="notaFinal(1)"></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2" onchange="notaFinal(1)"></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="finalGrade" name="media" readonly></td>
+            <td><div name="resultado">-- </div></td>
         </tr>
         <tr>
-            <td><strong>2020003</strong></td>
-            <td><strong>Bernardo Pereira Rothbarth</strong></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1"></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2"></td>
+            <td><strong>2020013</strong></td>
+            <td><strong>Tonico Vieira</strong></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1" onchange="notaFinal(2)"></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2" onchange="notaFinal(2)"></td>
             <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="finalGrade" name="media" readonly></td>
-            <td><div id="resultado">-- </div></td>
+            <td><div name="resultado">-- </div></td>
         </tr><tr>
-            <td><strong>2020004</strong></td>
-            <td><strong>Márcio Gonçalves Proença</strong></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1"></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2"></td>
+            <td><strong>2020014</strong></td>
+            <td><strong>Argentina Brasileira Silva</strong></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1" onchange="notaFinal(3)"></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2" onchange="notaFinal(3)"></td>
             <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="finalGrade" name="media" readonly></td>
-            <td><div id="resultado">-- </div></td>
+            <td><div name="resultado">-- </div></td>
         </tr>
         <tr>
-            <td><strong>2020005</strong></td>
-            <td><strong>Bella Accordi Proença</strong></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1"></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2"></td>
+            <td><strong>2020015</strong></td>
+            <td><strong>Christopher Lohn</strong></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1" onchange="notaFinal(4)"></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2" onchange="notaFinal(4)"></td>
             <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="finalGrade" name="media" readonly></td>
-            <td><div id="resultado">-- </div></td>
+            <td><div name="resultado">-- </div></td>
         </tr>
         <tr>
-            <td><strong>2020006</strong></td>
-            <td><strong>Bruno da Silva Volkov</strong></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1"></td>
-            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2"></td>
+            <td><strong>2020016</strong></td>
+            <td><strong>Antonio Shmidt</strong></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota1" name="nota1" onchange="notaFinal(5)"></td>
+            <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="nota2" name="nota2" onchange="notaFinal(5)"></td>
             <td><input type="number" value="0.0" min="0.0" step="0.1" max="10.0" id="finalGrade" name="media" readonly></td>
-            <td><div id="resultado">-- </div></td>
+            <td><div name="resultado">-- </div></td>
         </tr>
     </table> 
-    <button onclick="notas()">Enviar</button>   
     
 </body>
 </html>
