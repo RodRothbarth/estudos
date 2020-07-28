@@ -19,4 +19,13 @@ function direcionar(sala){
          aprovacao.innerHTML = "Aprovado"
       } else {aprovacao.innerHTML = "Reprovado"}
       
-    }    
+    }  
+
+    function highScore(){
+       var mat = document.getElementsByName('matricula')
+        
+        window.alert(mat)
+    }
+
+
+    

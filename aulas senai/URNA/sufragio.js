@@ -13,31 +13,21 @@ function sufragio() {
             window.alert("Escolheu: " + radios[i].value);
             switch (radios[i].value){
                 case "Bolsonaro": bolsonaro += 1;
-                break;
-        
+                break;        
                 case "Haddad": haddad += 1;
-                break;
-        
+                break;        
                 case "Ciro": ciro += 1;
-                break;
-        
+                break;        
                 case "Amoedo":  amoedo += 1;
-                break;
-        
+                break;        
                 case "branco": branco += 1;
-                break;
-                 
-            }
-            
-           
+                break;                 
+            }         
         }
-    }
-   
+    }   
 }
-
 function total(){
     let votosValidos = ((eleitores-branco)/eleitores)*100
     let votosBrancos = (branco/eleitores)*100
-
     window.alert(`Com o total de ${eleitores} de eleitores. Votos Válidos:  ${votosValidos} %, Votos Brancos: ${votosBrancos} %`)
 }

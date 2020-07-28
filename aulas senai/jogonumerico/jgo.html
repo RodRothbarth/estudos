@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de adivinhação</title>
+    <link rel="stylesheet" type="text/css" href="jgo.css">
+</head>
+<body>
+    <footer id="cabeca"><p>QUANTAS TENTATIVAS SÃO NECESSARIAS PARA ADIVINHAR UM NÚMERO ESCOLHIDO POR VOCÊ?</p></footer>
+    <div id="painel">
+    <select name="Jogo" id="select" onchange="escolha()">
+        <option value="Jogos">Selecione o Jogo</option>
+        <option value="9" id="9">Jogo dos 9</option>
+        <option value="99" id="99">Jogo dos 99</option>
+    </select>
+    </div> 
+    <div  id="resultado"><p><strong></strong></p></div>
+    <footer id="rodape"><p><strong>RL² ™ Desenvolvedora Solo</strong></p></footer>  
+    <script src="jgo9.js"></script>
+</body>
+</html>
