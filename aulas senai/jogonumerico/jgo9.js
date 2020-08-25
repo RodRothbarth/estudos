@@ -1,6 +1,5 @@
 function escolha(){
 let game = document.getElementById("select").value
-console.log(game)
 let msg = document.getElementById("resultado") 
 let count = 0
 let random = -1
@@ -8,37 +7,64 @@ let random = -1
 switch (game){
     case "9":
         let num = window.prompt("Digite o número da sorte entre 0 e 9!")
-        while (isNaN(num) == true){
-            num = window.prompt("Digite um número entre 0 e 9!")
+        console.log(Number.isInteger(Number(num)))
+        while (!Number.isInteger(Number(num)) || num < 0 || num > 9){
+            num = window.prompt("Elemento digitado não é um número entre 0 e 9!")
         }
-
         while (random != num){
-            if (num >=0 && num <=9){
             random = Math.floor(Math.random() * 10)
             console.log(random)
             count++
-            }else {
-                 num = window.prompt("Digite um número entre 0 e 9!")
-            }
+            console.log(`Número de tentativas ${count}. E o valor  random é ${random}`) 
         }
         msg.innerHTML = `Necessário(s) ${count} chute(s) para adivinhar o número ${num}!`; 
     break
     case "99":
         let num99 = window.prompt("Digite o número da sorte entre 0 e 99!")
-        while (isNaN(num99) == true){
-            num = window.prompt("Digite um número entre 0 e 99!")
+        console.log(Number.isInteger(Number(num99)))
+        while (!Number.isInteger(Number(num99)) || num99 < 0 || num99 > 99){
+            num99 = window.prompt("Elemento digitado não é um número entre 0 e 99!")
         }
-
         while (random != num99){
-            if (num99 >=0 && num99 <=99){
             random = Math.floor(Math.random() * 100)
             console.log(random)
             count++
-            }else {
-                 num99 = window.prompt("Digite um número entre 0 e 99!")
-            }
+            console.log(`Número de tentativas ${count}. E o valor  random é ${random}`) 
         }
         msg.innerHTML = `Necessário(s) ${count} chute(s) para adivinhar o número ${num99}!`; 
 
     }
 }    
+
+area = document.getElementById('resultado')
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        
+function entrar(){
+    area.style.background= 'green'
+    area.innerText= 'Aperte em recomeçar para reiniciar ou em um jogo no seletor!' 
+}
+
+function sair(){
+    area.style.background= 'white'
+    area.innerText=  ''
+}
+
+let click = document.getElementById('reset')
+click.addEventListener('click', resetar)
+click.addEventListener('mousedown', sombra)
+
+function resetar(){
+    window.location.reload()
+}
+
+function sombra(){
+    click.style.background= 'red'
+}
+
+let jogo = document.getElementById('painel')
+    jogo = addEventListener('mouseover', texto)
+
+function texto(){
+    jogo.innerHTML = "aqui mostra?"
+}
