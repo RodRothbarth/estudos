@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" nome="desease" id="illness" placeholder="Digite a doença">
+   
+    <select name="transmission" id="select">
+        <option value="seleção">Selecione a forma de transmição</option>
+        <option value="bactéria">Bactéria</option>
+        <option value="vírus">Vírus</option>
+        <option value="ambos">Bactéria e Vírus</option>
+    </select>
+
+    <button onclick="Cadastrar()">Cadastrar</button>
+    <button onclick="Listar()">Listar</button>
+    <input type="radio" value="Vírus" name="tipo"><label for="candidato1">Vírus</label>
+    <input type="radio" value="Bactéria" name="tipo"><label for="candidato2">Bactéria</label>
+    <input type="radio" value="Ambos" name="tipo"><label for="candidato3">Ambos</label>
+    <input type="radio" value="Completa" name="tipo"><label for="candidato4">Completa</label>
+   
+    <div id="aqui"></div>
+
+    <script src="vetorDoencas.js"></script>
+</body>
+</html>

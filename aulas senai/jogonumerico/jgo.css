@@ -12,7 +12,14 @@
     margin-top: -157px;
     margin-left: -180px; 
     } 
-    
+
+.class{
+    color: red;
+    text-decoration: underline;
+    text-align: left!important; /* !imprortant para priorisar esta mudança e nao a ja existente. */
+    text-shadow: 2px 2px black
+}
+
  #select{
     display: block;
     margin-left: auto;

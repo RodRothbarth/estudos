@@ -63,8 +63,14 @@ function sombra(){
 }
 
 let jogo = document.getElementById('painel')
-    jogo = addEventListener('mouseover', texto)
+    jogo.addEventListener('mouseover', texto)
 
 function texto(){
-    jogo.innerHTML = "aqui mostra?"
+    jogo.title = "Jogo de números aleatórios!"
+}
+
+let troca = document.getElementById('mudar').addEventListener('click', mudar)
+
+function mudar(){
+   area.classList.add("class") 
 }
